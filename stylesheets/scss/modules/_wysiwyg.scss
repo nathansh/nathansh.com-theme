@@ -1,0 +1,96 @@
+.wysiwyg {
+	font: {
+		family: $font-body;
+		size: $font-size-body;
+	}
+	line-height: 1.45em;
+	@media (max-width: $breakpoint-small) {
+		font-size: 16px;
+	} // small
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: $font-base;
+		line-height: 1.2em;
+		margin: 2.5em 0 .5em;
+	}
+	h2,
+	h3 {
+		margin-top: 1.5em;
+	}
+	a {
+		@include hover-focus-underline;
+		color: $color-brand;
+	} // a
+	blockquote {
+		margin-bottom: 2em;
+		.post--normal & {
+			@extend %wider-content;
+			margin: 2em 0;
+			padding: 0;
+			border: 0;
+			font: {
+				size: 40px;
+				weight: $font-weight-thin;
+				family: $font-base;
+			}
+			text-align: center;
+			line-height: 1.25em;
+			@media (max-width: $breakpoint-small) {
+				font-size: 28px;
+				width: 100%;
+				left: 0;
+				margin: 1.5em 0;
+			} // small
+		} // --normal
+	} // blockquote
+	pre[class*="language-"] {
+		@extend %wider-content;
+		padding: 3em span(2);
+		margin: 3em 0;
+		@media (max-width: $breakpoint-small) {
+			margin: 1em 0;
+			padding: 1.5em 1em;
+		} // small
+	}
+	pre, code {
+		font: {
+			size: 14px;
+			family: $font-code;
+		}
+		background: $color-canvas-alt;
+		padding: .1em .7em;
+	}
+	pre {
+		display: block;
+	}
+	code {
+		display: inline-block;
+	}
+	pre code {
+		display: block;
+	}
+	iframe {
+		margin: 40px auto !important; // !important needed to override inline styles applied
+		@media (max-width: $breakpoint-small) {
+			margin: 25px auto !important; // !important needed to override inline styles applied
+		} // small
+		.listing & {
+			// This important is also super gross! I need it because twitter puts some inline styles from the oembed
+			// that I need !important to override, and no I need to override THAT. So. Much. Shame.
+			margin: 0 auto !important;
+		} // .listing &
+	} // iframe
+	.fluid-width-video-wrapper {
+		margin: 40px auto;
+		iframe {
+			margin: 0!important; // this is getting ridiculous. Thanks tweeter.
+		} // iframe
+		@media (max-width: $breakpoint-small) {
+			margin: 25px auto;
+		} // small
+	} // .fluid-width-video-wrapper
+} // .wysiwygm40-a

@@ -1,0 +1,14 @@
+.external-link {
+	$block: &;
+	&:after {
+		@extend %u-icon-font;
+		display: inline-block;
+		content: $icon-external-link;
+		color: $color-base-alt;
+		font-size: .75em;
+		margin-left: .4em;
+	} // &:after
+	&--github:after {
+		content: $icon-github;
+	} // &--github
+} // .external-link

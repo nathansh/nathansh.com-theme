@@ -1,0 +1,33 @@
+.grid-list {
+	@include makeup-gutters;
+	overflow: hidden;
+	padding: 0;
+	list-style: none;
+	@media (max-width: $breakpoint-small) {
+		width: 100%;
+		left: 0;
+	} // small
+	&__item {
+		@include gallery(2 of 10);
+		@media (max-width: $breakpoint-small) {
+			@include gallery(3.3333 of 10);
+			padding: 1px;
+		} // small
+	} // &__item
+	&__link {
+		display: block;
+		overflow: hidden;
+		&:hover img,
+		&:focus img {
+			opacity: .8;
+		} // &:hover, &:focus
+		img {
+			@include transition(opacity .25s ease-in-out);
+			display: block;
+			opacity: 1;
+		} // img
+	} // &__link
+	&__image {
+		display: block;
+	} // &__image
+} // .grid-list

@@ -1,0 +1,25 @@
+.editable {
+	$block: &;
+	position: relative;
+	&__link {
+		@include transition(opacity .15s ease-in-out);
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-size: 0;
+		opacity: 0;
+		&:after {
+			@extend %u-icon-font;
+			@include transition(color .1s ease-in-out);
+			content: $icon-edit;
+			font-size: 24px;
+		} // &:after
+		&:hover:after,
+		&:focus:after {
+			color: $color-brand;
+		} // &:hover:after, &:focus:after
+		#{$block}:hover & {
+			opacity: 1;
+		} // .#{$block}:hover
+	} // &__link
+} // .editable

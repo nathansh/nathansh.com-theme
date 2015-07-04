@@ -1,0 +1,39 @@
+.social {
+	$block: &;
+	padding: 0; // because of normalize
+	margin: 0; // because of normalize
+	li {
+		@include inline-block;
+	}
+	&__item {
+		@include inline-block;
+		font-size: 1px;
+		font-size: 0px;
+		color: transparent;
+		&:hover:after,
+		&:focus:after {
+			color: $color-brand;
+		} // &:hover, &:focus
+		&:after {
+			@extend %u-icon-font;
+			@include transition(color .1s ease-in-out);
+			font-size: 26px;
+			color: lighten($color-base, 40%);
+		} // &:after
+
+		@each $site, $icon in $social_sites {
+			&--#{$site}:after {
+				content: $icon;
+			}
+		} // @each $social_sites
+
+		#{$block}--square & {
+			@each $site, $icon in $social_sites-square {
+				&--#{$site}:after {
+					content: $icon;
+				}
+			} // @each $social_sites-square
+		} // .social--square
+
+	} // &-item
+} // .social

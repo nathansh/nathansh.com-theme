@@ -1,0 +1,21 @@
+.site-footer {
+	border-top: 1px solid $color-keyline;
+	padding: 75px 0 100px;
+	text-align: center;
+	@media (max-width: $breakpoint-small) {
+		padding: 45px 0;
+	} // small
+	&__legaalese {
+		font-size: 13px;
+	} // &__legaalese
+	.social {
+		margin-bottom: 40px;
+		&__item {
+			&:after {
+				font-size: 25px;
+				color: $color-base;
+				margin: 0 10px;
+			} // &:after
+		} // &__item
+	} // .social
+} // .site-footer

@@ -1,0 +1,92 @@
+/*
+	Layout goes in this file. Susy setup should go here too.
+	Layout classes should be prefixed `.l-`
+*/
+
+$susy: (
+	columns: $grid-cols-full,
+	gutter-position: inside-static,
+	global-box-sizing: border-box,
+	column-width: 70px,
+	gutters: 20px/70px,
+	output: float,
+	debug: (
+		image: show,
+		output: overlay,
+		toggle: bottom left,
+	),
+);
+
+.l-container {
+	@include container();
+	@include bleed(0 gutter());
+	max-width: $grid-full + (gutter() * 2);
+	margin: 0 auto;
+	position: relative;
+	.no-mediaqueries & {
+		min-width: $breakpoint-no-mediaqueries;
+		padding: 0 5px;
+	}
+	@media (max-width: $breakpoint-small) {
+  		@include container($grid-cols-small);
+ 		max-width: $breakpoint-small;
+		padding: 0 20px;
+  	}
+  	&--wide {
+  		@include container(14);
+  		max-width: 1126px;
+		padding: 0;
+  		@media (max-width: $breakpoint-small) {
+  		} // small
+  	} // &--wide
+} // .container
+
+.l-flush {
+	width: calc(100% - 40px);
+	margin: 0 auto;
+} // .l-flush
+
+.l-content {
+	width: span(8);
+	margin: 0 auto;
+	&--wide {
+		width: span(10);
+		@media (max-width: $breakpoint-mid) {
+			width: 100%;
+		} // mid
+	} // &--wide
+	@media (max-width: $breakpoint-small) {
+		width: 100%;
+	} // small
+}
+
+.l-main {
+	padding: {
+		top: 60px;
+		bottom: 60px;
+	}
+	.single-post & {
+		padding-top: 75px;
+		@media (max-width: $breakpoint-small) {
+			padding: {
+				top: 15px;
+				bottom: 30px;
+			}
+		} // small
+	} // .single.single-post &
+	.has-post-thumbnail & {
+		padding-top: 30px;
+		@media (max-width: $breakpoint-small) {
+			padding: {
+				top: 15px;
+				bottom: 30px;
+			}
+		} // small
+	}
+	@media (max-width: $breakpoint-small) {
+		padding: {
+			top: 15px;
+			bottom: 30px;
+		}
+	} // small
+} // .l-main

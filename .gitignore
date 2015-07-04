@@ -1,0 +1,16 @@
+stats
+wp-content/cache*
+!.gitkeep
+*.DS_Store
+*.swp
+*._*
+*.gz
+*.mysql
+*.sql
+*.bz2
+*.zip
+*.tar
+.sass-cache/
+.wiki/
+compass_app_log.txt
+node_modules

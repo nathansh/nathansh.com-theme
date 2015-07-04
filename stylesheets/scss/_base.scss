@@ -1,0 +1,104 @@
+html {
+	@include border-box-sizing;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+}
+
+*,
+*:after,
+*:before {
+	@include box-sizing(inherit);
+}
+
+body {
+	font-family: $font-base;
+	color: $color-base;
+}
+
+p, ul, ol {
+	&:first-of-type {
+		margin-top: 0; // This is because of normalize. If you Meyer you have it anyway.
+	}
+	&:last-of-type {
+		margin-bottom: 0; // This is because of normalize. If you Meyer you have it anyway.
+	}
+}
+
+img {
+	@include responsive-image;
+}
+
+iframe {
+	max-width: 100%;
+}
+
+a {
+	color: $color-base;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+}
+
+h1 {
+	font: {
+		size: 54px;
+		weight: $font-weight-extrabold;
+	}
+	line-height: 1.2em;
+	@media (max-width: $breakpoint-small) {
+		font-size: 36px;
+	} // small
+}
+
+h2 {
+	font: {
+		size: 36px;
+		weight: $font-weight-extrabold;
+	}
+	@media (max-width: $breakpoint-small) {
+		font-size: 30px;
+	} // small
+}
+
+h3 {
+	font: {
+		size: 22px;
+		weight: $font-weight-extrabold;
+	}
+	text-transform: uppercase;
+}
+
+h4 {
+	font: {
+		size: 22px;
+		weight: $font-weight-light;
+	}
+}
+
+h5 {
+	font: {
+		size: 18px;
+		weight: $font-weight-light;
+	}
+	text-transform: uppercase;
+}
+
+h6 {
+	font: {
+		size: 18px;
+		weight: $font-weight-light;
+	}
+}
+
+blockquote {
+	margin-left: 0;
+	padding: 5px 17px;
+	border-left: 2px solid $color-keyline;
+}

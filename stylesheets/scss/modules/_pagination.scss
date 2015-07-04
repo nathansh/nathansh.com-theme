@@ -1,0 +1,52 @@
+.pagination {
+	font-size: 15px;
+	padding: 0 7px;
+	ul {
+		padding: 0;
+		list-style: none;
+	} // ul
+	&__item {
+		&--older a:before,
+		&--newer a:after {
+			@extend %u-icon-font;
+			@include transition(transform .2s ease-in-out);
+			@include translateX(0);
+			display: inline-block;
+			position: relative;
+		} // a:before, a:after
+		&--older {
+			float: left;
+			a {
+				&:before {
+					content: $icon-angle-left;
+					left: -7px;
+					padding-right: 10px;
+					margin-right: -10px;
+				} // &:before
+				&:hover,
+				&:focus {
+					&:before {
+						@include translateX(-3px);
+					} // &:before
+				} // &:hover, &:focus
+			} // a
+		} // &--older
+		&--newer {
+			float: right;
+			a {
+				&:after {
+					content: $icon-angle-right;
+					right: -7px;
+					padding-left: 10px;
+					margin-left: -10px;
+				} // &:after
+				&:hover,
+				&:focus {
+					&:after {
+						@include translateX(3px);
+					} // &:before
+				} // &:hover, &:focus
+			} // a
+		} // &--newer
+	} // &__item
+} // .pagination

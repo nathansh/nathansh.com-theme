@@ -1,0 +1,29 @@
+.link-tiles {
+	$block: &;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	clear: both;
+	@media (max-width: $breakpoint-mid) {
+		width: 100%;
+	} // mid
+	&__item {
+		@include gutter();
+		width: 50%;
+		float: left;
+		margin-bottom: gutter() * 2;
+		@media (max-width: $breakpoint-small) {
+			padding: 0;
+			width: 100%;
+			float: none;
+			&:last-of-type {
+				margin-bottom: 0;
+			} // &:last-of-type
+		} // small
+		#{$block}--full & {
+			width: 100%;
+			float: none;
+			padding: 0;
+		}
+	} // &__item
+} // .link-tiles

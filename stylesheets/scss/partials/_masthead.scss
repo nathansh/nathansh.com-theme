@@ -1,0 +1,22 @@
+.masthead {
+	@include transition(opacity .3s ease-in-out);
+	opacity: 1;
+	padding: 40px 0 30px;
+	border-bottom: 1px solid $color-keyline;
+	overflow: hidden;
+	.focus-mode & {
+		@include transition(opacity 1s ease-in-out);
+		opacity: .2;
+	} // .focus-mode &
+	@media (max-width: $tweakpoint-mobile-nav) {
+		padding: 20px 0;
+	} // small
+	.site-name {
+		float: left;
+		position: relative;
+		top: 2px;
+	} // .site-name
+	.primary-nav {
+		float: right;
+	} // .primary-nav
+} // .masthead

@@ -1,0 +1,12 @@
+.post-meta {
+	font-size: 17px;
+	color: $color-base-alt;
+	padding: 0;
+	list-style-type: none;
+	&:last-of-type {
+		margin-bottom: 1em;
+	} // &:last-of-type
+	&__key {
+		font-weight: $font-weight-bold;
+	} // &__key
+} // .post-meta

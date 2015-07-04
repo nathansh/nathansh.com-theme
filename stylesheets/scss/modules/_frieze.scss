@@ -1,0 +1,18 @@
+.frieze {
+	padding: 20px 0;
+	&--first {
+		padding-top: 60px;
+	} // &:first-of-type
+	@media (max-width: $breakpoint-small) {
+		padding: 15px 0;
+	} // small
+	&__title {
+		font-size: 28px;
+	} // &__title
+	&__intro {
+		margin-bottom: 30px;
+		@media (max-width: $breakpoint-small) {
+			margin-bottom: 15px;
+		} // small
+	} // &__intro
+} // .frieze

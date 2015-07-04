@@ -1,0 +1,117 @@
+.post {
+	$block: &;
+	&__image {
+		margin: 0 0 30px;
+		.single-post & {
+			margin-bottom: 50px;
+			@media (max-height: 648px) {
+				margin-bottom: 30px;
+			}
+			@media (max-width: $breakpoint-small) {
+				margin-bottom: 10px;
+			} // small
+		} // .single-post &
+		@media (max-width: $breakpoint-small) {
+			margin-bottom: 10px;
+		} // small
+	} // &__image
+	&__title {
+		.post--link & {
+			max-width: 90%; // don't strand the external link icon!
+		}
+		margin: 0 auto 1em;
+		@media (max-height: 648px) {
+			margin-bottom: .8em;
+		}
+		@media (max-width: $breakpoint-small) {
+			margin-bottom: .5em;
+		} // small
+		.single-post & {
+			text-align: center;
+			@media (max-width: $breakpoint-small) {
+				text-align: left;
+			} // small
+		}
+		.page & {
+			width: span(8);
+			margin: 0 auto .5em;
+			@media (max-width: $breakpoint-small) {
+				width: 100%;
+			} // small
+		} // .page &
+		.listing & {
+			margin-bottom: .3em;
+			margin-left: 0;
+		} // .listing &
+	} // &__title
+	&__subtitle {
+		display: block;
+		color: $color-base;
+		font: {
+			size: 32px;
+			weight: $font-weight-thin;
+		} // font
+		line-height: 1.2em;
+		margin-top: .5em;
+		@media (max-width: $breakpoint-small) {
+			font: {
+				size: 26px;
+				weight: $font-weight-light;
+			} // font
+			line-height: 1.1em;
+			margin-top: .2em;
+		} // small
+		.listing & {
+			font-size: 24px;
+			font-weight: $font-weight-light;
+			margin-top: .1em;
+		} // .listing &
+		&__prefix {
+			@extend %u-screen-reader;
+		} // &__prefix
+	} // &__subtitle
+	&__link {
+		@include transition(color .1s ease-in-out);
+		color: $color-base;
+		display: block;
+		a:hover &,
+		a:focus & {
+			color: $color-brand;
+			#{$block}__subtitle {
+				color: $color-base;
+			} // #{$block}__subtitle
+		} // &:hover, &:focus
+	} // &__link
+	&__image-link {
+		// @include transition(opacity .15s ease-in-out);
+		// opacity: 1;
+		overflow: hidden;
+		display: block;
+		img {
+			@include transition(opacity .3s ease-in-out);
+			display: block;
+			opacity: 1;
+		} // img
+		&:hover,
+		&:focus {
+			img {
+				opacity: .8;
+			} // img
+			// opacity: .7;
+		} // &:hover,&:focus
+	} // &__image-link
+	&__permalink {
+		font-size: 0;
+		&:after {
+			@extend %u-icon-font;
+			@include transition(color .1s ease-in-out);
+			content: $icon-link;
+			font-size: 16px;
+			margin-left: .5em;
+		} // &:after
+		&:hover:after,
+		&:focus:after {
+			color: $color-brand;
+		} // &:hover,&:focus
+	} // &__permalink
+} // .post

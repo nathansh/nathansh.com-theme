@@ -1,0 +1,91 @@
+/* Mixins
+/* + + + + + + + + + + + + + + + + + + + + + + + + + + + */
+
+// -- Mixins for common patterns, utility and compatability -- //
+
+@mixin clearfix {
+  zoom: 1;  // Triggering "hasLayout" in IE
+  &:after {
+  	content: ".";
+  	display: block;
+  	height: 0;
+  	clear: both;
+  	visibility: hidden;
+  } // after
+} // @mixin clearfix
+
+%clearfix {
+	@include clearfix;
+}
+
+@mixin hover-focus-underline {
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	} // hover, focus
+} // @mixin hover-focus-underline
+
+@mixin no-list {
+  // This one is particularly useful in Drupal where list often use list-style-image
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  list-style: none;
+} // @mixin nolist
+
+@mixin responsive-image {
+	max-width: 100%;
+	height: auto;
+	.ie8 & {
+		width: auto;
+  } // ie8
+} // @mixin responsive-image
+
+@mixin font-size($size) {
+	font-size: $size+px;
+	font-size: $size/10+rem;
+} // @mixin font-size
+
+@mixin inline-block {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+} // @mixin inline-block
+
+@mixin font-weight($weight) {
+	@if $weight == normal {
+		font-weight: normal;
+		font-weight: $font-weight-normal;
+		} @else if $weight == bold {
+			font-weight: bold;
+			font-weight: $font-weight-bold;
+			} @else if $weight == light {
+				font-weight: lighter;
+				font-weight: $font-weight-light;
+				} @else {
+					font-weight: $weight;
+				}
+} // @mixin font-weight
+
+@mixin makeup-gutters {
+	width: calc(100% + 20px);
+	position: relative;
+	left: calc(-10px);
+}
+
+@mixin wider-content {
+	$extra-width: span(4);
+	$pull: 0 - span(2);
+	width: calc(100% + #{$extra-width});
+	position: relative;
+	left: calc(#{$pull});
+	@media (max-width: $breakpoint-small) {
+		width: 100%;
+		left: 0;
+	} // small
+}
+
+%wider-content {
+	@include wider-content;
+}

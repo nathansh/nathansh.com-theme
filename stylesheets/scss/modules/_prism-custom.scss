@@ -1,0 +1,14 @@
+code[class*="language-"],
+pre[class*="language-"] {
+	text-shadow: none;
+	font: {
+		family: $font-code;
+		size: 13px;
+	}
+	line-height: 1.6em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: $color-canvas-alt;
+}

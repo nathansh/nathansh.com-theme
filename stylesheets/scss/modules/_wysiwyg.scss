@@ -25,6 +25,18 @@
 		@include hover-focus-underline;
 		color: $color-brand;
 	} // a
+	.alignright {
+		float: right;
+		margin: 5px 0 5px 15px;
+	} // alignright
+	.alignleft {
+		float: left;
+		margin: 5px 15px 5px 0;
+	} // .alignleft
+	.aligncenter {
+		margin: 15px auto;
+		display: block;
+	} // .aligncenter
 	blockquote {
 		margin-bottom: 2em;
 		.post--normal & {

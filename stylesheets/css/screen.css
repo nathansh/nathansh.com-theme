@@ -4256,6 +4256,12 @@ blockquote {
 .post--link .post__title {
   max-width: 90%;
 }
+@media (max-width: 600px) {
+  /* line 19, ../scss/modules/_post.scss */
+  .post--link .post__title {
+    margin-left: 0;
+  }
+}
 @media (max-height: 648px) {
   /* line 18, ../scss/modules/_post.scss */
   .post__title {
@@ -4268,33 +4274,33 @@ blockquote {
     margin-bottom: .5em;
   }
 }
-/* line 29, ../scss/modules/_post.scss */
+/* line 32, ../scss/modules/_post.scss */
 .single-post .post__title {
   text-align: center;
 }
 @media (max-width: 600px) {
-  /* line 29, ../scss/modules/_post.scss */
+  /* line 32, ../scss/modules/_post.scss */
   .single-post .post__title {
     text-align: left;
   }
 }
-/* line 35, ../scss/modules/_post.scss */
+/* line 38, ../scss/modules/_post.scss */
 .page .post__title {
   width: 66.66667%;
   margin: 0 auto .5em;
 }
 @media (max-width: 600px) {
-  /* line 35, ../scss/modules/_post.scss */
+  /* line 38, ../scss/modules/_post.scss */
   .page .post__title {
     width: 100%;
   }
 }
-/* line 42, ../scss/modules/_post.scss */
+/* line 45, ../scss/modules/_post.scss */
 .listing .post__title {
   margin-bottom: .3em;
   margin-left: 0;
 }
-/* line 47, ../scss/modules/_post.scss */
+/* line 50, ../scss/modules/_post.scss */
 .post__subtitle {
   display: block;
   color: #232323;
@@ -4304,7 +4310,7 @@ blockquote {
   margin-top: .5em;
 }
 @media (max-width: 600px) {
-  /* line 47, ../scss/modules/_post.scss */
+  /* line 50, ../scss/modules/_post.scss */
   .post__subtitle {
     font-size: 26px;
     font-weight: 300;
@@ -4312,13 +4318,13 @@ blockquote {
     margin-top: .2em;
   }
 }
-/* line 64, ../scss/modules/_post.scss */
+/* line 67, ../scss/modules/_post.scss */
 .listing .post__subtitle {
   font-size: 24px;
   font-weight: 300;
   margin-top: .1em;
 }
-/* line 73, ../scss/modules/_post.scss */
+/* line 76, ../scss/modules/_post.scss */
 .post__link {
   -moz-transition: color 0.1s ease-in-out;
   -o-transition: color 0.1s ease-in-out;
@@ -4327,20 +4333,20 @@ blockquote {
   color: #232323;
   display: block;
 }
-/* line 77, ../scss/modules/_post.scss */
+/* line 80, ../scss/modules/_post.scss */
 a:hover .post__link, a:focus .post__link {
   color: #dc746b;
 }
-/* line 80, ../scss/modules/_post.scss */
+/* line 83, ../scss/modules/_post.scss */
 a:hover .post__link .post__subtitle, a:focus .post__link .post__subtitle {
   color: #232323;
 }
-/* line 85, ../scss/modules/_post.scss */
+/* line 88, ../scss/modules/_post.scss */
 .post__image-link {
   overflow: hidden;
   display: block;
 }
-/* line 90, ../scss/modules/_post.scss */
+/* line 93, ../scss/modules/_post.scss */
 .post__image-link img {
   -moz-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
@@ -4349,15 +4355,15 @@ a:hover .post__link .post__subtitle, a:focus .post__link .post__subtitle {
   display: block;
   opacity: 1;
 }
-/* line 97, ../scss/modules/_post.scss */
+/* line 100, ../scss/modules/_post.scss */
 .post__image-link:hover img, .post__image-link:focus img {
   opacity: .8;
 }
-/* line 103, ../scss/modules/_post.scss */
+/* line 106, ../scss/modules/_post.scss */
 .post__permalink {
   font-size: 0;
 }
-/* line 105, ../scss/modules/_post.scss */
+/* line 108, ../scss/modules/_post.scss */
 .post__permalink:after {
   -moz-transition: color 0.1s ease-in-out;
   -o-transition: color 0.1s ease-in-out;
@@ -4367,7 +4373,7 @@ a:hover .post__link .post__subtitle, a:focus .post__link .post__subtitle {
   font-size: 16px;
   margin-left: .5em;
 }
-/* line 112, ../scss/modules/_post.scss */
+/* line 115, ../scss/modules/_post.scss */
 .post__permalink:hover:after, .post__permalink:focus:after {
   color: #dc746b;
 }

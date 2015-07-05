@@ -37,6 +37,9 @@
 			@media (max-width: 955px) {
 				margin-right: 5px;
 			}
+			@media (max-width: $breakpoint-small) {
+				margin-left: 0;
+			} // small
 		} // .listing &
 		a {
 			@include transition(background .1s ease-in-out);

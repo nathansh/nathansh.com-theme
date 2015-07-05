@@ -39,7 +39,8 @@ module.exports = function(grunt) {
             'js/src/modules/link-tiles.js',
             'js/src/modules/skip-links.js',
             'js/src/modules/wysiwyg.js',
-            'js/src/modules/focus-mode.js'
+            'js/src/modules/focus-mode.js',
+            'js/src/modules/mobile-nav.js'
           ]
         }
       }

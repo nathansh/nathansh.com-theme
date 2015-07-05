@@ -27,7 +27,7 @@
 
 	};
 
-	$(document).on('ready', socialShare.init());
+	$(document).on('ready', socialShare.init);
 
 	return socialShare;
 

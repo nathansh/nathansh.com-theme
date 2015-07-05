@@ -78,4 +78,25 @@
 			} // small
 		} // a
 	} // &__item
+	&__toggler {
+		font-size: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 11;
+		display: none;
+		@media (max-width: $tweakpoint-mobile-nav) {
+			display: inline-block;
+		} // small
+		&:after {
+			@extend %u-icon-font;
+			content: $icon-bars;
+			font-size: 22px;
+			color: $color-base;
+			opacity: .7;
+			.has-nav & {
+				content: $icon-times;
+			} // .has-nav &
+		} // &:after
+	} // &__toggler
 } // .primary-nav

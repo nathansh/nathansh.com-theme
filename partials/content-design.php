@@ -19,8 +19,12 @@
 			$images = get_field('design_images');
 
 			foreach ( $images as $image ) {
+				$class = 'showcase__image-actual';
+				if ( $image['design_image_border'] ) {
+					$class .= ' showcase__image-actual--border';
+				}
 				echo '<figure class="showcase__image">';
-					d7_acf_image($image['design_image'], 'portfolio-full', 'showcase__image-actual');
+					d7_acf_image($image['design_image'], 'portfolio-full', $class);
 				echo '</figure>';
 			}
 

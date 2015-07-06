@@ -22,6 +22,12 @@
 			} // small
 		} // figure
 	} // &__images
+	&__image-actual {
+		&--border {
+			border: 1px solid $color-keyline;
+			padding: 5px;
+		} // &--border
+	} // &__image-actual
 	&__title {
 		font-size: 16px;
 	} // &__title
@@ -44,3 +50,4 @@
 		line-height: 1.45em;
 	} // &__description
 } // .showcase
+

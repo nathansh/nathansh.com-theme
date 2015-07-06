@@ -3820,6 +3820,7 @@ blockquote {
   float: left;
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 20px;
 }
 /* line 66, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
 .grid-list__item:nth-child(5n + 1) {
@@ -3859,6 +3860,7 @@ blockquote {
     padding-left: 10px;
     padding-right: 10px;
     padding: 1px;
+    margin-bottom: 0;
   }
   /* line 66, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
   .grid-list__item:nth-child(3n + 1) {
@@ -3879,16 +3881,16 @@ blockquote {
     clear: none;
   }
 }
-/* line 17, ../scss/modules/_grid-list.scss */
+/* line 19, ../scss/modules/_grid-list.scss */
 .grid-list__link {
   display: block;
   overflow: hidden;
 }
-/* line 20, ../scss/modules/_grid-list.scss */
+/* line 22, ../scss/modules/_grid-list.scss */
 .grid-list__link:hover img, .grid-list__link:focus img {
   opacity: .8;
 }
-/* line 24, ../scss/modules/_grid-list.scss */
+/* line 26, ../scss/modules/_grid-list.scss */
 .grid-list__link img {
   -moz-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
@@ -3897,7 +3899,7 @@ blockquote {
   display: block;
   opacity: 1;
 }
-/* line 30, ../scss/modules/_grid-list.scss */
+/* line 32, ../scss/modules/_grid-list.scss */
 .grid-list__image {
   display: block;
 }

@@ -9,9 +9,11 @@
 	} // small
 	&__item {
 		@include gallery(2 of 10);
+		margin-bottom: 20px;
 		@media (max-width: $breakpoint-small) {
 			@include gallery(3.3333 of 10);
 			padding: 1px;
+			margin-bottom: 0;
 		} // small
 	} // &__item
 	&__link {

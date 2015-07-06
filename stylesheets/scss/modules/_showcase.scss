@@ -23,6 +23,7 @@
 		} // figure
 	} // &__images
 	&__image-actual {
+		width: 100%;
 		&--border {
 			border: 1px solid $color-keyline;
 			padding: 5px;

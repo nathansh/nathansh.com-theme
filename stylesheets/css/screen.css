@@ -4563,25 +4563,29 @@ pre[class*="language-"] {
     margin-bottom: 10px;
   }
 }
-/* line 26, ../scss/modules/_showcase.scss */
+/* line 25, ../scss/modules/_showcase.scss */
+.showcase__image-actual {
+  width: 100%;
+}
+/* line 27, ../scss/modules/_showcase.scss */
 .showcase__image-actual--border {
   border: 1px solid #e2e2e2;
   padding: 5px;
 }
-/* line 31, ../scss/modules/_showcase.scss */
+/* line 32, ../scss/modules/_showcase.scss */
 .showcase__title {
   font-size: 16px;
 }
-/* line 34, ../scss/modules/_showcase.scss */
+/* line 35, ../scss/modules/_showcase.scss */
 .showcase__meta {
   font-size: 14px;
   color: #232323;
 }
-/* line 38, ../scss/modules/_showcase.scss */
+/* line 39, ../scss/modules/_showcase.scss */
 .showcase__url {
   margin-top: 1em;
 }
-/* line 40, ../scss/modules/_showcase.scss */
+/* line 41, ../scss/modules/_showcase.scss */
 .showcase__url a {
   text-decoration: none;
   color: #dc746b;
@@ -4590,7 +4594,7 @@ pre[class*="language-"] {
 .showcase__url a:hover, .showcase__url a:focus {
   text-decoration: underline;
 }
-/* line 45, ../scss/modules/_showcase.scss */
+/* line 46, ../scss/modules/_showcase.scss */
 .showcase__description {
   font-size: 15px;
   font-family: pt-serif, "Times New Roman", Times, serif;

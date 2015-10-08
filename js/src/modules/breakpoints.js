@@ -11,7 +11,7 @@
 		small: 600,
 		smaller: 420,
 		noMediaqueries: 1020,
-		mobileNav: 740
+		mobileNav: 805
 	};
 
 	return breakpoints;

@@ -55,7 +55,12 @@
 
 	<header class="masthead l-flush js-focus-ui">
 		<div class="l-container l-container--wide">
-			<h1 class="site-name"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+			<h1 class="site-name">
+				<a href="<?php bloginfo('url'); ?>" class="site-name__link">
+					<?php echo get_avatar(1, 150, '', 'Photo of Nathan Shubert-Harbison', array('class' => 'site-name__avatar')); ?>
+					<?php bloginfo('name'); ?>
+				</a>
+			</h1>
 			<?php
 
 				/**

@@ -27,7 +27,7 @@
 				<?php include "partials/dev-open_source.php"; ?>
 
 				<!-- AGENCY PROJECTS -->
-				<?php include "partials/dev-agency.php"; ?>
+				<?php // include "partials/dev-agency.php"; ?>
 
 
 		</section><!--  #main_content-->

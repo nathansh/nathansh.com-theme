@@ -28,8 +28,12 @@
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400italic,700,700italic|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<!--
 	<script src="//use.typekit.net/gcu1uac.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+ -->
 
     <?php include_once "partials/favicons.php"; ?>
 

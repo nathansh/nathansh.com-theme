@@ -3602,7 +3602,7 @@ html *, html *:before, html *:after {
 
 /* line 13, ../scss/_base.scss */
 body {
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
+  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
   color: #232323;
 }
 
@@ -3934,7 +3934,7 @@ blockquote {
 .link-tile__description {
   padding-top: 25px;
   font-size: 16px;
-  font-family: pt-serif, "Times New Roman", Times, serif;
+  font-family: Pt Serif, "Times New Roman", Times, serif;
 }
 /* line 30, ../scss/modules/_link-tile.scss */
 .link-tile__flag {
@@ -4155,7 +4155,7 @@ blockquote {
   padding: 0;
   list-style: none;
   font-size: 14px;
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
+  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
 }
 /* line 8, ../scss/modules/_post-tags.scss */
 .single-post .post-tags {
@@ -4513,7 +4513,7 @@ a:hover .post__link .post__subtitle, a:focus .post__link .post__subtitle {
 code[class*="language-"],
 pre[class*="language-"] {
   text-shadow: none;
-  font-family: source-code-pro, Consolas, Monaco, "Andale Mono", courier-new, mono, monospace;
+  font-family: "Source Code Pro", Consolas, Monaco, "Andale Mono", courier-new, mono, monospace;
   font-size: 13px;
   line-height: 1.6em;
 }
@@ -4599,7 +4599,7 @@ pre[class*="language-"] {
 /* line 46, ../scss/modules/_showcase.scss */
 .showcase__description {
   font-size: 15px;
-  font-family: pt-serif, "Times New Roman", Times, serif;
+  font-family: Pt Serif, "Times New Roman", Times, serif;
   line-height: 1.45em;
 }
 
@@ -4826,7 +4826,7 @@ a:hover .site-name__avatar {
 
 /* line 1, ../scss/modules/_wysiwyg.scss */
 .wysiwyg {
-  font-family: pt-serif, "Times New Roman", Times, serif;
+  font-family: Pt Serif, "Times New Roman", Times, serif;
   font-size: 18px;
   line-height: 1.45em;
 }
@@ -4843,7 +4843,7 @@ a:hover .site-name__avatar {
 .wysiwyg h4,
 .wysiwyg h5,
 .wysiwyg h6 {
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
+  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.2em;
   margin: 2.5em 0 .5em;
 }
@@ -4887,7 +4887,7 @@ a:hover .site-name__avatar {
   border: 0;
   font-size: 40px;
   font-weight: 100;
-  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
+  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
   text-align: center;
   line-height: 1.25em;
 }
@@ -4915,7 +4915,7 @@ a:hover .site-name__avatar {
 /* line 71, ../scss/modules/_wysiwyg.scss */
 .wysiwyg pre, .wysiwyg code {
   font-size: 14px;
-  font-family: source-code-pro, Consolas, Monaco, "Andale Mono", courier-new, mono, monospace;
+  font-family: "Source Code Pro", Consolas, Monaco, "Andale Mono", courier-new, mono, monospace;
   background: #f7f7f7;
   padding: .1em .7em;
 }

@@ -79,6 +79,7 @@
 		display: block;
 		a:hover &,
 		a:focus & {
+			@include transition-duration(0s);
 			color: $color-brand;
 			#{$block}__subtitle {
 				color: $color-base;

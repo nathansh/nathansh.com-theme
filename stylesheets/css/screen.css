@@ -496,8 +496,8 @@ th {
 */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../../fonts/fontawesome/fontawesome-webfont.eot?1430868900');
-  src: url('../../fonts/fontawesome/fontawesome-webfont.eot?&1430868900#iefix') format("embedded-opentype"), url('../../fonts/fontawesome/fontawesome-webfont.woff2?1430868900') format("woff2"), url('../../fonts/fontawesome/fontawesome-webfont.woff?1430868900') format("woff"), url('../../fonts/fontawesome/fontawesome-webfont.ttf?1430868900') format("truetype"), url('../../fonts/fontawesome/fontawesome-webfont.svg?&1430868900') format("svg");
+  src: url('../../fonts/fontawesome/fontawesome-webfont.eot?1446657289');
+  src: url('../../fonts/fontawesome/fontawesome-webfont.eot?&1446657289#iefix') format("embedded-opentype"), url('../../fonts/fontawesome/fontawesome-webfont.woff2?1446657289') format("woff2"), url('../../fonts/fontawesome/fontawesome-webfont.woff?1446657289') format("woff"), url('../../fonts/fontawesome/fontawesome-webfont.ttf?1446657289') format("truetype"), url('../../fonts/fontawesome/fontawesome-webfont.svg?&1446657289') format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -3451,7 +3451,7 @@ pre[class*="language-"] {
   margin: 0 auto;
   position: relative;
 }
-/* line 12, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
 .l-container:after {
   content: " ";
   display: block;
@@ -3471,7 +3471,7 @@ pre[class*="language-"] {
     max-width: 600px;
     padding: 0 20px;
   }
-  /* line 12, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
   .l-container:after {
     content: " ";
     display: block;
@@ -3486,7 +3486,7 @@ pre[class*="language-"] {
   max-width: 1126px;
   padding: 0;
 }
-/* line 12, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
 .l-container--wide:after {
   content: " ";
   display: block;
@@ -3584,7 +3584,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
 }
-/* line 21, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.6/sass/susy/language/susy/_box-sizing.scss */
 html *, html *:before, html *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -3602,7 +3602,7 @@ html *, html *:before, html *:after {
 
 /* line 13, ../scss/_base.scss */
 body {
-  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
   color: #232323;
 }
 
@@ -3822,31 +3822,31 @@ blockquote {
   padding-right: 10px;
   margin-bottom: 20px;
 }
-/* line 66, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+/* line 66, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.6/sass/susy/language/susy/_gallery.scss */
 .grid-list__item:nth-child(5n + 1) {
   margin-left: 0;
   margin-right: -100%;
   clear: both;
 }
-/* line 66, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+/* line 66, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.6/sass/susy/language/susy/_gallery.scss */
 .grid-list__item:nth-child(5n + 2) {
   margin-left: 20%;
   margin-right: -100%;
   clear: none;
 }
-/* line 66, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+/* line 66, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.6/sass/susy/language/susy/_gallery.scss */
 .grid-list__item:nth-child(5n + 3) {
   margin-left: 40%;
   margin-right: -100%;
   clear: none;
 }
-/* line 66, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+/* line 66, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.6/sass/susy/language/susy/_gallery.scss */
 .grid-list__item:nth-child(5n + 4) {
   margin-left: 60%;
   margin-right: -100%;
   clear: none;
 }
-/* line 66, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+/* line 66, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.6/sass/susy/language/susy/_gallery.scss */
 .grid-list__item:nth-child(5n + 5) {
   margin-left: 80%;
   margin-right: -100%;
@@ -3862,19 +3862,19 @@ blockquote {
     padding: 1px;
     margin-bottom: 0;
   }
-  /* line 66, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  /* line 66, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.6/sass/susy/language/susy/_gallery.scss */
   .grid-list__item:nth-child(3n + 1) {
     margin-left: 0;
     margin-right: -100%;
     clear: both;
   }
-  /* line 66, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  /* line 66, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.6/sass/susy/language/susy/_gallery.scss */
   .grid-list__item:nth-child(3n + 2) {
     margin-left: 33.333%;
     margin-right: -100%;
     clear: none;
   }
-  /* line 66, ../../../../../../../.rvm/gems/ruby-2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  /* line 66, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.6/sass/susy/language/susy/_gallery.scss */
   .grid-list__item:nth-child(3n + 3) {
     margin-left: 66.666%;
     margin-right: -100%;
@@ -3934,7 +3934,7 @@ blockquote {
 .link-tile__description {
   padding-top: 25px;
   font-size: 16px;
-  font-family: Pt Serif, "Times New Roman", Times, serif;
+  font-family: "pt-serif", "Times New Roman", Times, serif;
 }
 /* line 30, ../scss/modules/_link-tile.scss */
 .link-tile__flag {
@@ -4155,7 +4155,7 @@ blockquote {
   padding: 0;
   list-style: none;
   font-size: 14px;
-  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
 }
 /* line 8, ../scss/modules/_post-tags.scss */
 .single-post .post-tags {
@@ -4343,18 +4343,22 @@ blockquote {
 }
 /* line 80, ../scss/modules/_post.scss */
 a:hover .post__link, a:focus .post__link {
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
   color: #dc746b;
 }
-/* line 83, ../scss/modules/_post.scss */
+/* line 84, ../scss/modules/_post.scss */
 a:hover .post__link .post__subtitle, a:focus .post__link .post__subtitle {
   color: #232323;
 }
-/* line 88, ../scss/modules/_post.scss */
+/* line 89, ../scss/modules/_post.scss */
 .post__image-link {
   overflow: hidden;
   display: block;
 }
-/* line 93, ../scss/modules/_post.scss */
+/* line 94, ../scss/modules/_post.scss */
 .post__image-link img {
   -moz-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
@@ -4363,15 +4367,15 @@ a:hover .post__link .post__subtitle, a:focus .post__link .post__subtitle {
   display: block;
   opacity: 1;
 }
-/* line 100, ../scss/modules/_post.scss */
+/* line 101, ../scss/modules/_post.scss */
 .post__image-link:hover img, .post__image-link:focus img {
   opacity: .8;
 }
-/* line 106, ../scss/modules/_post.scss */
+/* line 107, ../scss/modules/_post.scss */
 .post__permalink {
   font-size: 0;
 }
-/* line 108, ../scss/modules/_post.scss */
+/* line 109, ../scss/modules/_post.scss */
 .post__permalink:after {
   -moz-transition: color 0.1s ease-in-out;
   -o-transition: color 0.1s ease-in-out;
@@ -4381,7 +4385,7 @@ a:hover .post__link .post__subtitle, a:focus .post__link .post__subtitle {
   font-size: 16px;
   margin-left: .5em;
 }
-/* line 115, ../scss/modules/_post.scss */
+/* line 116, ../scss/modules/_post.scss */
 .post__permalink:hover:after, .post__permalink:focus:after {
   color: #dc746b;
 }
@@ -4513,7 +4517,7 @@ a:hover .post__link .post__subtitle, a:focus .post__link .post__subtitle {
 code[class*="language-"],
 pre[class*="language-"] {
   text-shadow: none;
-  font-family: "Source Code Pro", Consolas, Monaco, "Andale Mono", courier-new, mono, monospace;
+  font-family: "source-code-pro", Consolas, Monaco, "Andale Mono", courier-new, mono, monospace;
   font-size: 13px;
   line-height: 1.6em;
 }
@@ -4599,7 +4603,7 @@ pre[class*="language-"] {
 /* line 46, ../scss/modules/_showcase.scss */
 .showcase__description {
   font-size: 15px;
-  font-family: Pt Serif, "Times New Roman", Times, serif;
+  font-family: "pt-serif", "Times New Roman", Times, serif;
   line-height: 1.45em;
 }
 
@@ -4826,7 +4830,7 @@ a:hover .site-name__avatar {
 
 /* line 1, ../scss/modules/_wysiwyg.scss */
 .wysiwyg {
-  font-family: Pt Serif, "Times New Roman", Times, serif;
+  font-family: "pt-serif", "Times New Roman", Times, serif;
   font-size: 18px;
   line-height: 1.45em;
 }
@@ -4843,7 +4847,7 @@ a:hover .site-name__avatar {
 .wysiwyg h4,
 .wysiwyg h5,
 .wysiwyg h6 {
-  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.2em;
   margin: 2.5em 0 .5em;
 }
@@ -4887,7 +4891,7 @@ a:hover .site-name__avatar {
   border: 0;
   font-size: 40px;
   font-weight: 100;
-  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+  font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
   text-align: center;
   line-height: 1.25em;
 }
@@ -4915,7 +4919,7 @@ a:hover .site-name__avatar {
 /* line 71, ../scss/modules/_wysiwyg.scss */
 .wysiwyg pre, .wysiwyg code {
   font-size: 14px;
-  font-family: "Source Code Pro", Consolas, Monaco, "Andale Mono", courier-new, mono, monospace;
+  font-family: "source-code-pro", Consolas, Monaco, "Andale Mono", courier-new, mono, monospace;
   background: #f7f7f7;
   padding: .1em .7em;
 }
@@ -5031,8 +5035,8 @@ a:hover .site-name__avatar {
 */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../../fonts/fontawesome/fontawesome-webfont.eot?1430868900');
-  src: url('../../fonts/fontawesome/fontawesome-webfont.eot?&1430868900#iefix') format("embedded-opentype"), url('../../fonts/fontawesome/fontawesome-webfont.woff2?1430868900') format("woff2"), url('../../fonts/fontawesome/fontawesome-webfont.woff?1430868900') format("woff"), url('../../fonts/fontawesome/fontawesome-webfont.ttf?1430868900') format("truetype"), url('../../fonts/fontawesome/fontawesome-webfont.svg?&1430868900') format("svg");
+  src: url('../../fonts/fontawesome/fontawesome-webfont.eot?1446657289');
+  src: url('../../fonts/fontawesome/fontawesome-webfont.eot?&1446657289#iefix') format("embedded-opentype"), url('../../fonts/fontawesome/fontawesome-webfont.woff2?1446657289') format("woff2"), url('../../fonts/fontawesome/fontawesome-webfont.woff?1446657289') format("woff"), url('../../fonts/fontawesome/fontawesome-webfont.ttf?1446657289') format("truetype"), url('../../fonts/fontawesome/fontawesome-webfont.svg?&1446657289') format("svg");
   font-weight: normal;
   font-style: normal;
 }

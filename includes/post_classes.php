@@ -28,15 +28,18 @@
 		// Has other acf images, add classes for those
 		$fields = get_fields();
 
-		foreach ( $fields as $field => $field_content ) {
+		if ( $fields ) {
 
-			if ( is_array($field_content) && isset($field_content['sizes']) && count($field_content['sizes']) ) {
-				$classes[] = 'has-image';
-				$classes[] = 'has-image-' . $field;
+			foreach ( $fields as $field => $field_content ) {
+
+				if ( is_array($field_content) && isset($field_content['sizes']) && count($field_content['sizes']) ) {
+					$classes[] = 'has-image';
+					$classes[] = 'has-image-' . $field;
+				}
+
 			}
 
 		}
-
 		// Has comments or not
 		if ( comments_open() && get_comments_number() ) {
 			$classes[] = 'has-comments';
